@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+	<channel>
+		<title> </title>
+		<link> </link>
+		<description>Official PixelArt RSS </description>
+	</channel>
+
+	<item>
+		<title>Portfolio</title>
+		<link> </link>
+		<description>Here you can see some of our work </description>
+	</item>
+
+	<item>
+		<title>Contact</title>
+		<link> </link>
+		<description> What problem can we solve for you?  </description>
+	</item>
+
+</rss>
