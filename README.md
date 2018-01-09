@@ -1,4 +1,4 @@
-#GamingZone 
+# GamingZone 
 School project for Web Programming course
 
-##Version 0.1
+## Version 0.1
