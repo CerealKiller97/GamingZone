@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register</title>
+  <!--META TAGS-->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="Stefan Bogdanović">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="rights" content="Copyright by Stefan Bogdanović@ 2018">
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/ico" sizes="16x16">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <!--CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+  <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+ 
+  <section class="hero is-fullheight is-dark">
+      <div id="alert" class="container">
+          <div class="columns">
+              <div class="column is-4 is-offset-4 has-text-centered">
+                  <article class="message is-link">
+                      <div class="message-header ">
+                        <p class="has-text-centered">Notification</p>
+                        <button id="deleteBtn" class="delete" aria-label="delete"></button>
+                      </div>
+                      <div class="message-body has-text-justify">
+                       You have been successfully registered.Please check your mail.
+                      </div>
+                    </article>
+              </div>
+          </div>
+        </div>
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-vcentered">
+          <div class="column is-4 is-offset-4 has-text-centered">
+            <h1 class="title">
+              Register an Account
+            </h1>
+            <div class="box">
+              <label for="regName" class="label">Name</label>
+              <p class="control">
+                <input id="regName" class="input" type="text" placeholder="John Doe">
+              </p>
+              <label for="regUsername" class="label">Username</label>
+              <p class="control">
+                <input id="regUsername" class="input" type="text" placeholder="johndoe">
+              </p>
+              <label for="regEmail" class="label">Email</label>
+              <p class="control">
+                <input id="regEmail" class="input" type="text" placeholder="johndoe@example.org">
+              </p>
+              <hr class="">
+              <label for="pwd" class="label">Password</label>
+              <p class="control">
+                <input id="pwd" class="input" type="password" placeholder="●●●●●●●">
+              </p>
+              <label for="confirmPwd" class="label">Confirm Password</label>
+              <p class="control">
+                <input  id="confirmPwd"class="input" type="password" placeholder="●●●●●●●">
+              </p>
+              <hr>
+              <p class="control">
+                <button id="registerBtn" class="button is-link is-fullwidth">Register</button>
+               <!--  <button class="button is-default">Cancel</button> -->
+              </p>
+            </div>
+            <p class="has-text-centered">
+              <a href="login.html">Login</a>
+              | 
+              <a href="#">Need help?</a>
+            </p>
+            <p class="has-text-centered">
+                <progress id="progress" class="progress is-link" value="0" max="100"></progress>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/register.js"></script>
+</body>
+</html>
