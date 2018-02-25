@@ -1,0 +1,19 @@
+#heros .column {
+  margin-top: 2em;
+}
+
+#one {
+  background-color: red;
+}
+
+button, a {
+  transition: .2s linear;
+}
+
+.bsa {
+  padding: 3em;
+}
+
+#newsletter {
+  margin-top: 2em;
+}
