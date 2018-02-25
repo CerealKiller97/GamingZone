@@ -1,115 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <title>GamingZone</title>
+<head>
+    <title>GamingZone</title>
       <!--META TAGS-->
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta charset="utf-8">
-      <meta name="description" content="Welcome to GamingZone">
-      <meta name="keywords" content="GamingZone,Gaming,Zone,Games,PC,PS4,PS3,Xbox360,XboxOne">
+      <meta name="description" content="Free Web tutorials">
+      <meta name="keywords" content="HTML,CSS,XML,JavaScript">
       <meta name="author" content="Stefan Bogdanović">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="rights" content="Copyright by Stefan Bogdanović@ 2018">
-      <link rel="shortcut icon" href="favicon.ico" type="image/gif" sizes="16x16">
+      <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/ico" sizes="16x16">
       <!--CSS-->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="css/style.css">
+      <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+      <link rel="stylesheet" href="css/main.css">
       <!---JS-->
       <!-- <script >Alertify.js</script> -->
-      <!-- <script type="text/javascript" src="js/jquery"></script> -->
+      
       <!-- LIGHT BOX http://lokeshdhakar.com/projects/lightbox2/-->
-   </head>
-   <body>
-    <!--HEADER-->
-       <header> 
-           <div id="logoHolder">
-                <h1 id="logo"><a href="index.html">Gaming<span>Zone</span></a></h1>
-           </div>
-           
-           <nav id="menu">
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="#">Products  <i class="fa fa-caret-down" aria-hidden="true"></i> </a></li>
-                    <li><a href="#">Reviews   <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="contactus.html">Contact Us</a></li>
-                </ul>
-            </nav>
-
-            <div id="search">
-                <input type="search" name="search" id="searchBox" placeholder="Search the game..."/>
-                <button id="searchBtn">
-                    <i id="searchIcon" class="fa fa-search" aria-hidden="true"></i>
-                </button>
-            </div>
-        <div class="clear"></div>    
-    </header>
-    <!--END OF HEADER-->  
-    
-    <!--SLIDER-->
-      
-        <div id="slider">
-            <!--Here goes slider -->
-            <img src="img/TombRaider-reboot.jpg" alt="Tomb Raider"/>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar is-link">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">GamingZone </a>
+      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  
+    <div id="navbarExampleTransparentExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="#">
+          Home
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">
+            Games
+          </a>
+          <div class="navbar-dropdown is-boxed">
+            <a class="navbar-item" href="#">
+              PC
+            </a>
+            <a class="navbar-item" href="#">
+              PS4
+            </a>
+            <a class="navbar-item" href="#">
+              Xbox One
+            </a>
+            <a class="navbar-item" href="#">
+              PS3
+            </a>
+            <a class="navbar-item" href="#">
+              Xbox 360
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item is-active" href="#">
+              Retro
+            </a>
+          </div>
         </div>
-      
-    <!--END OF SLIDER-->
-
-    <!--MAIN-->
-      <div id="main">
-          
+        <a class="navbar-item" href="https://bulma.io/">
+            About
+        </a>
+        <a class="navbar-item" href="https://bulma.io/">
+          Contact
+        </a>
       </div>
-    <!--END OF MAIN-->
-
-      <div id="newsletter"> 
-        <!--Subscribe to our newsletter and get exclusive news you won't find anywhere else straight to your inbox.
-        We'll never share your email address and you can opt out at any time,we promise.-->
-          <h1 id="subsribe">Subscribe</h1>
-          <p>Sing up with your e-mail address to receive news and updates.</p>
-            <form action="https://formspree.io/webprogramiranjeict@gmail.com" method="POST">
-                <input type="email" id="newsletterBox" placeholder="Enter your e-mail address" name="_replyto"/>
-                <input type="hidden" name="_subject" value="New subscription!" />
-            
-          <button type="submit" id="newsletterBtn">
-              <i id="sendBtn" class="fa fa-paper-plane" aria-hidden="true"></i>
-         </button> 
-        </form>
-          <p id="privacy">We respect your privacy.</p>    
-           
+  
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="field is-grouped">
+            <p class="control">
+              <a class="button bd-tw" target="_blank"> <span> Register </span> </a>
+            </p>
+            <p class="control">
+              <a class="button is-dark" href="#"><span>Login</span></a>
+            </p>
+          </div>
+        </div>
       </div>
+    </div>
+  </nav>
+  <!-- END OF NAVBAR -->
 
-      <!--FOOTER-->
-      <footer>
-          <h1 id="socialMedia">Social Media</h1>
-            <div id="left" class="bottomMenu">
-                <ul class="footer-menu">
-                    <li><a href="https://www.facebook.com/"> <i id="facebook" class="fa fa-facebook" aria-hidden="true"></i> </a></li>
-                    <li><a href="https://twitter.com/"> <i  id="twitter" class="fa fa-twitter" aria-hidden="true"></i> </a></li>
-                    <li><a href="https://plus.google.com/"> <i id="googlePlus" class="fa fa-google-plus" aria-hidden="true"></i> </a></li>
-                    <li><a href="https://www.instagram.com/"> <i id="instagram" class="fa fa-instagram" aria-hidden="true"></i> </a></li>
-                    <li></li>
-                </ul>
-            </div> 
-            <h1 id="gzoneBottom">Gaming <span>Zone</span></h1>
-                <div id="middleBottom" class="bottomMenu">
-                    
-                    <ul class="footer-menu">
-                        <li><a href="index.html"> Home </a></li>
-                        <li><a href="#"> Products </a></li>
-                        <li><a href="#"> Review </a></li>
-                        <li><a href="#"> Services </a></li>
-                        <li> <a href="documentation.pdf"> <i class="fa fa-book" aria-hidden="true"></i> Documentation </a></li>
-                        <li><a href="sitemap.xml">  <i class="fa fa-sitemap" aria-hidden="true"></i> Sitemap </a></li>
-                        <li><a href="contactus.html"> Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="clear"></div>
+  <!-- SLIDER -->
+  <div class="container">
+    <p class="has-text-justified">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur beatae atque delectus cumque assumenda, obcaecati non excepturi quam nostrum distinctio enim molestias culpa doloremque amet, provident, itaque accusamus nam ipsa.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur beatae atque delectus cumque assumenda, obcaecati non excepturi quam nostrum distinctio enim molestias culpa doloremque amet, provident, itaque accusamus nam ipsa.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur beatae atque delectus cumque assumenda, obcaecati non excepturi quam nostrum distinctio enim molestias culpa doloremque amet, provident, itaque accusamus nam ipsa.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur beatae atque delectus cumque assumenda, obcaecati non excepturi quam nostrum distinctio enim molestias culpa doloremque amet, provident, itaque accusamus nam ipsa.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur beatae atque delectus cumque assumenda, obcaecati non excepturi quam nostrum distinctio enim molestias culpa doloremque amet, provident, itaque accusamus nam ipsa.
+    </p>
+   
+    <img src="" alt=""/>
+  </div>
+  <!-- END OF SLIDER -->
 
-                <p id="copyright"><a href="#"><i class="fa fa-copyright" aria-hidden="true"></i> Stefan Bogdanović 2018 </a></p>
-                    
-        </footer>
-        <!--END OF FOOTER-->
-      <script src="https://unpkg.com/sweetalert2@7.3.1/dist/sweetalert2.all.js"></script>
-      <script src="js/main.js"></script>
-   </body>
+  <!-- SECTION -->
+<div class="container">
+  <div id="heros" class="columns">
+
+    <div class="column">
+      <article class="tile is-child box">
+          <figure class="image center is-128x128">
+              <img src="https://bulma.io/images/placeholders/128x128.png" alt="xx">
+            </figure>
+        <p class="title has-text-centered">One column</p>
+        <p class="subtitle">With some content</p>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+      </div>
+    </div>
+
+  <div class="column">
+    <article class="tile is-child box">
+        <figure class="image  is-128x128">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
+        </figure>
+      <p class="title has-text-centered">Seconds column</p>
+      <p class="subtitle">With some content</p>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+    </div>
+    </article>
+  </div>
+
+  <div class="column">
+    <article class="tile is-child box">
+        <figure class="image is-128x128">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
+          </figure>
+      <p class="title has-text-centered">Third column</p>
+      <p class="subtitle">With some content</p>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+    </div>
+  </div>
+  </div>
+</div>
+  <!-- END OF SECTION -->
+
+  <!-- ACTIONS -->
+  
+  <!-- END OF ACTIONS -->
+
+  <!-- NEWSLETTER -->
+  <div id="newsletter" class="hero is-link bsa">
+    <div class="container">
+      <div class="columns is-vcentered">
+
+        <div class="column is-one-third">
+          <p class="title">Sign up we respect your privacy</p>
+          <p class="subtitle">Trust us</p>
+        </div>
+
+        <div class="column ">
+          <div class="field is-grouped">
+            <div class="control is-expanded">
+              <p class="control has-icons-left has-icons-right">
+                <input class="input" type="email" placeholder="Enter your email address..">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                  <span class="icon is-small is-right is-invisible">
+                    <i class=" fas fa-check"></i>
+                  </span>
+              </p>
+            </div>
+            <div class="control">
+                <button class="button is-white is-outlined">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+  <!-- END OF NEWSLETTER -->
+
+  <!-- FOOTER -->
+  <footer>
+
+  </footer>
+  <!-- END OF FOOTER -->
+<!--JS-->
+<!--Google Analytics-->
+
+  <script src="js/main.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script> 
+</body>
 </html>
