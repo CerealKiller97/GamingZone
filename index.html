@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>GamingZone</title>
-      <!--META TAGS-->
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta charset="utf-8">
-      <meta name="description" content="Free Web tutorials">
-      <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-      <meta name="author" content="Stefan Bogdanović">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="rights" content="Copyright by Stefan Bogdanović@ 2018">
-      <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/ico" sizes="16x16">
-      <!--CSS-->
-      <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
-      <link rel="stylesheet" href="css/main.css">
-      <!---JS-->
-      <!-- <script >Alertify.js</script> -->
-      
-      <!-- LIGHT BOX http://lokeshdhakar.com/projects/lightbox2/-->
+  <title>GamingZone</title>
+  <!--META TAGS-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="Stefan Bogdanović">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="rights" content="Copyright by Stefan Bogdanović@ 2018">
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/ico" sizes="16x16">
+  <!--CSS-->
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!---JS-->
+  <!-- <script >Alertify.js</script> -->
+
+  <!-- LIGHT BOX http://lokeshdhakar.com/projects/lightbox2/-->
 </head>
+
 <body>
   <!-- NAVBAR -->
   <nav class="navbar is-link">
@@ -31,14 +33,14 @@
         <span></span>
       </div>
     </div>
-  
+
     <div id="navbarExampleTransparentExample" class="navbar-menu">
       <div class="navbar-start">
         <a class="navbar-item" href="#">
           Home
         </a>
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link" href="#">
+        <div  class="navbar-item has-dropdown"> <!-- is-hoverable -->
+          <a id="dropdown" class="navbar-link" href="#">
             Games
           </a>
           <div class="navbar-dropdown is-boxed">
@@ -64,21 +66,25 @@
           </div>
         </div>
         <a class="navbar-item" href="https://bulma.io/">
-            About
+          About
         </a>
         <a class="navbar-item" href="https://bulma.io/">
           Contact
         </a>
       </div>
-  
+
       <div class="navbar-end">
         <div class="navbar-item">
           <div class="field is-grouped">
             <p class="control">
-              <a class="button bd-tw" target="_blank"> <span> Register </span> </a>
+              <a class="button bd-tw" target="_blank">
+                <span> Register </span>
+              </a>
             </p>
             <p class="control">
-              <a class="button is-dark" href="#"><span>Login</span></a>
+              <a class="button is-dark" href="#">
+                <span>Login</span>
+              </a>
             </p>
           </div>
         </div>
@@ -90,63 +96,71 @@
   <!-- SLIDER -->
   <div class="container">
     <p class="has-text-justified">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur beatae atque delectus cumque assumenda, obcaecati non excepturi quam nostrum distinctio enim molestias culpa doloremque amet, provident, itaque accusamus nam ipsa.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur beatae atque delectus cumque assumenda, obcaecati non excepturi quam nostrum distinctio enim molestias culpa doloremque amet, provident, itaque accusamus nam ipsa.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur beatae atque delectus cumque assumenda, obcaecati non excepturi quam nostrum distinctio enim molestias culpa doloremque amet, provident, itaque accusamus nam ipsa.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur beatae atque delectus cumque assumenda, obcaecati non excepturi quam nostrum distinctio enim molestias culpa doloremque amet, provident, itaque accusamus nam ipsa.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur beatae atque delectus cumque assumenda, obcaecati non excepturi quam nostrum distinctio enim molestias culpa doloremque amet, provident, itaque accusamus nam ipsa.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur beatae atque delectus cumque assumenda, obcaecati non
+      excepturi quam nostrum distinctio enim molestias culpa doloremque amet, provident, itaque accusamus nam ipsa. Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Consequuntur beatae atque delectus cumque assumenda, obcaecati non
+      excepturi quam nostrum distinctio enim molestias culpa doloremque amet, provident, itaque accusamus nam ipsa. Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Consequuntur beatae atque delectus cumque assumenda, obcaecati non
+      excepturi quam nostrum distinctio enim molestias culpa doloremque amet, provident, itaque accusamus nam ipsa. Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Consequuntur beatae atque delectus cumque assumenda, obcaecati non
+      excepturi quam nostrum distinctio enim molestias culpa doloremque amet, provident, itaque accusamus nam ipsa. Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Consequuntur beatae atque delectus cumque assumenda, obcaecati non
+      excepturi quam nostrum distinctio enim molestias culpa doloremque amet, provident, itaque accusamus nam ipsa.
     </p>
-   
-    <img src="" alt=""/>
+
+    <img src="" alt="" />
   </div>
   <!-- END OF SLIDER -->
 
   <!-- SECTION -->
-<div class="container">
-  <div id="heros" class="columns">
+  <div class="container">
+    <div id="heros" class="columns">
 
-    <div class="column">
-      <article class="tile is-child box">
+      <div class="column">
+        <article class="tile is-child box">
           <figure class="image center is-128x128">
-              <img src="https://bulma.io/images/placeholders/128x128.png" alt="xx">
-            </figure>
-        <p class="title has-text-centered">One column</p>
-        <p class="subtitle">With some content</p>
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+            <img src="https://bulma.io/images/placeholders/128x128.png" alt="xx">
+          </figure>
+          <p class="title has-text-centered">One column</p>
+          <p class="subtitle">With some content</p>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum
+              ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+          </div>
       </div>
-    </div>
 
-  <div class="column">
-    <article class="tile is-child box">
-        <figure class="image  is-128x128">
-            <img src="https://bulma.io/images/placeholders/128x128.png">
-        </figure>
-      <p class="title has-text-centered">Seconds column</p>
-      <p class="subtitle">With some content</p>
-    <div class="content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-    </div>
-    </article>
-  </div>
-
-  <div class="column">
-    <article class="tile is-child box">
-        <figure class="image is-128x128">
+      <div class="column">
+        <article class="tile is-child box">
+          <figure class="image  is-128x128">
             <img src="https://bulma.io/images/placeholders/128x128.png">
           </figure>
-      <p class="title has-text-centered">Third column</p>
-      <p class="subtitle">With some content</p>
-    <div class="content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+          <p class="title has-text-centered">Seconds column</p>
+          <p class="subtitle">With some content</p>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum
+              ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="column">
+        <article class="tile is-child box">
+          <figure class="image is-128x128">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
+          </figure>
+          <p class="title has-text-centered">Third column</p>
+          <p class="subtitle">With some content</p>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum
+              ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+          </div>
+      </div>
     </div>
   </div>
-  </div>
-</div>
   <!-- END OF SECTION -->
 
   <!-- ACTIONS -->
-  
+
   <!-- END OF ACTIONS -->
 
   <!-- NEWSLETTER -->
@@ -155,31 +169,32 @@
       <div class="columns is-vcentered">
 
         <div class="column is-one-third">
-          <p class="title">Sign up we respect your privacy</p>
-          <p class="subtitle">Trust us</p>
+          <h2 class="title">Let's stay in touch</h2>
+          <h3 class="subtitle">No spam we promise</h3>
         </div>
 
         <div class="column ">
           <div class="field is-grouped">
             <div class="control is-expanded">
               <p class="control has-icons-left has-icons-right">
-                <input class="input" type="email" placeholder="Enter your email address..">
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-envelope"></i>
-                  </span>
-                  <span class="icon is-small is-right is-invisible">
-                    <i class=" fas fa-check"></i>
-                  </span>
+                <input id="newsletterInput" class="input" type="email" placeholder="Enter your email address.."/>
+                <span class="icon is-small is-left">
+                  <i class="fas fa-envelope"></i>
+                </span>
+                <p id="res" class="help"></p>
+                <span class="icon is-small is-right is-invisible">
+                  <i class=" fas fa-check"></i>
+                </span>
               </p>
             </div>
             <div class="control">
-                <button class="button is-white is-outlined">Subscribe</button>
+              <button class="button is-white is-outlined">Subscribe</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>  
+  </div>
   <!-- END OF NEWSLETTER -->
 
   <!-- FOOTER -->
@@ -187,10 +202,11 @@
 
   </footer>
   <!-- END OF FOOTER -->
-<!--JS-->
-<!--Google Analytics-->
+  <!--JS-->
+  <!--Google Analytics-->
 
   <script src="js/main.js"></script>
-  <script type="text/javascript" src="js/jquery.js"></script> 
+  <script type="text/javascript" src="js/jquery.js"></script>
 </body>
+
 </html>
