@@ -1,0 +1,32 @@
+[
+  {
+    "src":"images/1.jpg",
+    "alt":"Neki opis1",
+    "text":"Description"
+  },
+
+  {
+    "src":"images/2.jpg",
+    "alt":"Neki opis2",
+    "text":"Description"
+  },
+
+  {
+    "src":"images/3.jpg",
+    "alt":"Neki opis3",
+    "text":"Description"
+  },
+
+  {
+    "src":"images/4.jpg",
+    "alt":"Neki opis4",
+    "text":"Description"
+  },
+
+  {
+    "src":"images/5.jpg",
+    "alt":"Neki opis5",
+    "text":"Description"
+  }
+
+]
