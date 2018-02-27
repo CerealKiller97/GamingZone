@@ -72,6 +72,12 @@ $(document).ready(function () {
       opacity: 1
     })
 
+    setTimeout(function () {
+      $('#notify').animate({
+        opacity: 0
+      })
+    },3000)
+
   })
 
   $('#deleteBtn').click(function () {
@@ -79,6 +85,7 @@ $(document).ready(function () {
       opacity: 0
     })
   })
+ 
  
 
 
