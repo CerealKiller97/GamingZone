@@ -5,7 +5,7 @@
   <!--META TAGS-->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Free Web tutorials">
+  <meta name="description" content="Registration page for GamingZone website">
   <meta name="keywords" content="HTML,CSS,XML,JavaScript">
   <meta name="author" content="Stefan Bogdanović">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,26 +14,23 @@
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <!--CSS-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
-  <link rel="stylesheet" href="css/register.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
  
-  <section class="hero is-fullheight is-dark">
-      <div id="alert" class="container">
-          <div class="columns">
-              <div class="column is-4 is-offset-4 has-text-centered">
-                  <article class="message is-link">
-                      <div class="message-header ">
-                        <p class="has-text-centered">Notification</p>
-                        <button id="deleteBtn" class="delete" aria-label="delete"></button>
-                      </div>
-                      <div class="message-body has-text-justify">
-                       You have been successfully registered.Please check your mail.
-                      </div>
-                    </article>
-              </div>
+  <section class="hero is-fullheight is-dark">      
+    <div class="columns">
+      <div class="column is-4 is-offset-4 has-text-centered">
+        <div id="notify" class="notification is-link">
+          <button id="deleteBtn" class="delete"></button>
+            <ul>
+              <li> <strong>You have been successfully registered. </strong></li>
+              <li> <strong> Please check your e-mail to confirm your identity.</strong></li>
+            </ul>
           </div>
         </div>
+      </div>
+        
     <div class="hero-body">
       <div class="container">
         <div class="columns is-vcentered">
@@ -41,7 +38,10 @@
             <h1 class="title">
               Register an Account
             </h1>
-            <div class="box">
+            <div class="box">               
+                <p class="has-text-centered">
+                    <progress id="progress" class="progress is-link is-small" value="0" max="100"></progress>
+                </p>
               <label for="regName" class="label">Name</label>
               <p class="control">
                 <input id="regName" class="input" type="text" placeholder="John Doe">
@@ -50,11 +50,11 @@
               <p class="control">
                 <input id="regUsername" class="input" type="text" placeholder="johndoe">
               </p>
-              <label for="regEmail" class="label">Email</label>
+              <label for="regEmail" class="label">E-Mail</label>
               <p class="control">
                 <input id="regEmail" class="input" type="text" placeholder="johndoe@example.org">
               </p>
-              <hr class="">
+              <hr>
               <label for="pwd" class="label">Password</label>
               <p class="control">
                 <input id="pwd" class="input" type="password" placeholder="●●●●●●●">
@@ -66,17 +66,8 @@
               <hr>
               <p class="control">
                 <button id="registerBtn" class="button is-link is-fullwidth">Register</button>
-               <!--  <button class="button is-default">Cancel</button> -->
               </p>
             </div>
-            <p class="has-text-centered">
-              <a href="login.html">Login</a>
-              | 
-              <a href="#">Need help?</a>
-            </p>
-            <p class="has-text-centered">
-                <progress id="progress" class="progress is-link" value="0" max="100"></progress>
-            </p>
           </div>
         </div>
       </div>
