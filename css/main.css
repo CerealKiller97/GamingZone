@@ -1,3 +1,4 @@
+/* INDEX */
 #heros .column {
   margin-top: 2em;
 }
@@ -16,4 +17,46 @@ button, a {
 
 #newsletter {
   margin-top: 2em;
+}
+
+/* REGISTER */
+
+.hero-body {
+  padding-top: 2em;
+}
+
+#alert {
+  margin-top: 3em;
+}
+
+.pb {
+  padding-bottom: 0;
+}
+
+.hide{
+  visibility: hidden;
+  opacity: .1 ;
+}
+.visible {
+  visibility: visible;
+  opacity: 1;
+}
+#progress {
+  margin-bottom: 1.5em;
+}
+
+#notify {
+  margin-top: 2em;
+}
+
+::-webkit-scrollbar {
+  width: .25em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #363636;
+  outline: 1px solid slategrey;
+}
+.opacity {
+  opacity: 0;
 }
