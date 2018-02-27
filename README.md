@@ -1,9 +1,14 @@
-# Gaming Zone 
-**School project for Web Programming course
-
+# Gaming Zone **School project for Web Programming course
 ### Version v2.0
 
-```javascript
+# Gaming Zone features:
+```Vanilla JS
 var s = "JavaScript syntax highlighting";
 alert(s);
 ```
+
+⋅⋅* ``` Vanilla JS ``` 
+⋅⋅* ```jQuery ```
+⋅⋅* ``` AJAX ```
+⋅⋅* ``` SCSS ```
+⋅⋅* ``` HTML ```
