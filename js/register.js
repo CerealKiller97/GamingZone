@@ -1,3 +1,4 @@
+/* GLOBAL SCOPE */
 let name = document.querySelector('#regName')
 let progress = document.querySelector('#progress')
 let counter = 0
@@ -8,36 +9,91 @@ let notify = document.querySelector('#notify')
 
 document.addEventListener('DOMContentLoaded',() => {
   name.focus()
-  name.addEventListener('keypress',nameValid)
+  /* name.addEventListener('keypress',nameValid) */
+  /* name.addEventListener('blur',validName)  */
   registerBtn.addEventListener('click',registrationValidation)
 })
 
 let registrationValidation = () => {
+  /* GETTING INPUT FIEDLS */
   let name = document.querySelector('#regName')
   let username = document.querySelector('#regUsername')
   let email = document.querySelector('#regEmail')
-  /* Ispis teksta da li je dobro se registrovao ili ne */
-  /*IF => Ako je ok ona ovo */
-  if (!name.value) {
-    document.querySelector('#regName').classList.add('is-danger')
-    let messages = ['You have been successfully registered.', 'Please check your e-mail to confirm your identity.']
-    let lis = ``
-    for (let i in messages) {
-      lis += `<li> <strong>${messages[i]} </strong></li>`
+  let pwd = document.querySelector('#pwd')
+  let confirmPwd = document.querySelector('#confirmPwd')
+  let isFormOK = true
+
+  /* REGULAR EXPRESSIONS */
+
+  let regName = /^([A-ZŠĐŽĆČ][a-zšđžćč]{2,20}\s)+([A-ZŠĐŽĆČ][a-zšđžćč]{2,20})+$/
+  let regUsername = /^[A-ZŠĐŽĆČ][a-zšđžćč]{2,20}((\_)|(\.))?[A-ZŠĐŽĆČ][a-zšđžćč]{2,20}[0-9]{0,5}$/
+  let regEmail = /^[a-zšđžćč]{4,}(\.)?[a-zšđžćč]{4,}([0-9]{0,5})?\@((gmail)|(outlook)|\w)\.com$/
+  let regPwd = /^[a-zšđžćč]{2,20}[0-9]{1,}$/
+
+ let nameValid = () => { 
+
+    /* Checking for name input */
+    if (!regName.test(name.value)) {
+      name.classList.add('is-danger')
+      isFormOK = false
+    } else {
+      name.classList.add('is-success')
     }
-  notify.classList.add('is-link')
-  msgNotification.innerHTML = lis
-  } /* else {
-    let errors = ['You must.', 'aaa.']
-    let liErr = ``
-    for (let i in errors) {
-      liErr += `<li> <strong>${errors[i]} </strong></li>`
-    }
-    notify.classList.add('is-danger')
-    msgNotification.innerHTML = liErr
-  } */
 }
 
+
+
+  /* Checking username input */
+  if (!regUsername.test(username.value)) {
+    username.classList.add('is-danger')
+    isFormOK = false
+  } else {
+    username.classList.add('is-success')
+  }
+
+  /* Checking email input */
+  if (!regEmail.test(email.value)) {
+    email.classList.add('is-danger')
+    isFormOK = false
+  } else {
+    email.classList.add('is-success')
+  }
+
+  /* Checking password input */
+  if (!regPwd.test(pwd.value)) {
+    pwd.classList.add('is-danger')
+    isFormOK = false
+  } else {
+    pwd.classList.add('is-success')
+  }
+
+  /* Checking if password are matching */
+  if (pwd.value === confirmPwd.value) {
+    confirmPwd.classList.add('is-success')
+  } else {
+    confirmPwd.classList.add('is-danger')
+    isFormOK = false
+  }
+
+  /* Checking if there is conditon to show notification */
+  if (isFormOK) {
+    name.classList.remove('is-success')
+    name.value = ''
+    username.classList.remove('is-success')
+    username.value = ''
+    email.classList.remove('is-success')
+    email.value = ''
+    pwd.classList.remove('is-success')
+    pwd.value = ''
+    confirmPwd.classList.remove('is-success')    
+    confirmPwd.value = ''
+    console.log('Tacno');
+    
+  } else {
+    console.log('Netacno')
+  }
+
+}
 let nameValid = () => {
   let name = document.querySelector('#regName')
   // Testing for name field
@@ -63,7 +119,7 @@ let alert = (msg) => {
   return 
 }
 
-$(document).ready(function () {
+$(document).ready( () => {
   // Register button
   $('#notify').addClass('opacity')
 
@@ -80,13 +136,10 @@ $(document).ready(function () {
 
   })
 
-  $('#deleteBtn').click(function () {
+  $('#deleteBtn').click( () => {
     $('#notify').animate({
       opacity: 0
     })
   })
  
- 
-
-
 })
