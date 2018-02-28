@@ -19,6 +19,13 @@ button, a {
   margin-top: 2em;
 }
 
+.icon-success {
+  color: #23d160;
+}
+.icon-danger {
+  color: #ff3860;
+}
+
 /* REGISTER */
 
 .hero-body {
@@ -59,4 +66,54 @@ button, a {
 }
 .opacity {
   opacity: 0;
+}
+
+/* LOGIN */
+
+.opacityShow {
+  -webkit-animation: opacity0to1 2s ;
+  -moz-animation:    opacity0to1 2s ;
+  -o-animation:      opacity0to1 2s ;
+  animation:         opacity0to1 2s ;
+}
+
+@-webkit-keyframes opacity0to1 {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-moz-keyframes opacity0to1 {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-o-keyframes opacity0to1 {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes opacity0to1 {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.opacityHide {
+  -webkit-animation: opacity1to0 2s ;
+  -moz-animation:    opacity1to0 2s ;
+  -o-animation:      opacity1to0 2s ;
+  animation:         opacity1to0 2s ;
+}
+
+@-webkit-keyframes opacity1to0 {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-moz-keyframes opacity1to0 {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-o-keyframes opacity1to0 {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes opacity1to0 {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
 }
