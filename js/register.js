@@ -27,7 +27,7 @@ let registrationValidation = () => {
 
   let regName = /^([A-ZŠĐŽĆČ][a-zšđžćč]{2,20}\s)+([A-ZŠĐŽĆČ][a-zšđžćč]{2,20})+$/
   let regUsername = /^[A-ZŠĐŽĆČ][a-zšđžćč]{2,20}((\_)|(\.))?[A-ZŠĐŽĆČ][a-zšđžćč]{2,20}[0-9]{0,5}$/
-  let regEmail = /^[a-zšđžćč]{4,}(\.)?[a-zšđžćč]{4,}([0-9]{0,5})?\@((gmail)|(outlook)|\w)\.com$/
+  let regEmail = /^[a-zšđžćč]{4,}(\.)?[a-zšđžćč]{4,}([0-9]{0,5})?\@((gmail)|(outlook)|(msn)|(live)|(hotmail)|(yahoo)|\w)\.com$/
   let regPwd = /^[a-zšđžćč]{2,20}[0-9]{1,}$/
 
  let nameValid = () => { 
