@@ -1,25 +1,30 @@
 let newsletter = document.querySelector('#newsletterInput')
 let dropdown = document.querySelector('#dropdown')
-
+let newsletterBtn = document.querySelector('#newsletterBtn')
 window.onload = () => {
   newsletter.addEventListener('blur', newsletterValidatation)
-  dropdown.addEventListener('mouseenter',showDropdown)
+  dropdown.addEventListener('mouseenter', showDropdown)
+  newsletterBtn.addEventListener('click', showNotification)
   /* name.addEventListener('blur', nameValid)  */
-
 }
 
 let newsletterValidatation = () => {
   let inputVal = newsletter.value
-  let reEmail = /^$/
-  let span = document.querySelector('#res')
-  if (inputVal) {
-    span.classList.add('is-danger')
-    span.textContent = 'This email is invalid'
+  let reEmail = /^[a-zšđžćč]{4,}(\.)?[a-zšđžćč]{4,}([0-9]{0,5})?\@((gmail)|(outlook)|\w)\.com$/
+  let envelope = document.querySelector('#envelope')
+  if (!reEmail.test(inputVal)) {
+    envelope.classList.add('icon-success')
   } else {
-    span.classList.add('is-success')
-    span.textContent = 'This email is valid'
+    envelope.classList.add('icon-danger')
+  }  
+}
+
+let showNotification = () => {
+  if (envelope.classList.contains('icon-success')) {
+    console.log('OK')  
+  } else {
+    console.log('ERROR')
   }
-  
 }
 
 let showDropdown = () => {
@@ -51,4 +56,5 @@ let slider = () => {
 
 let createLayout = () => {
   //Napravi div sa klasom one-third i stiluzuj 
+
 }
