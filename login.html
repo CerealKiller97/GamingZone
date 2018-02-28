@@ -23,25 +23,21 @@
         <div class="column is-4 is-offset-4">
           <h3 class="title has-text-white">Login</h3>
           <p class="subtitle has-text-white">Please login to proceed.</p>
-          <div class="box">
-            <figure class="avatar">
-              <!-- <img src="https://identicons.github.com/jasonlong.png"> -->
-            </figure>
-            <form>
+          <div class="box">            
                 <div class="field">
                     <p class="control has-icons-left">
-                      <input class="input" type="email" placeholder="Email">
+                      <input id="loginMail" class="input" type="text" placeholder="Email"/>
                       <span class="icon is-small is-left">
-                        <i class="fas fa-envelope"></i>
+                        <i id="mailEnvelope" class="fas fa-envelope"></i>
                       </span>
                     </p>
                   </div>
 
               <div class="field">
                   <p class="control has-icons-left">
-                    <input class="input" type="password" placeholder="Password">
+                    <input id="loginPwd" class="input" type="password" placeholder="Password"/>
                     <span class="icon is-small is-left">
-                      <i class="fas fa-lock"></i>
+                      <i id="pwdLock" class="fas fa-lock"></i>
                     </span>
                   </p>
                 </div>
@@ -51,11 +47,10 @@
                   Remember me
                 </label>
               </div>
-              <button class="button is-block is-link  is-fullwidth">Login</button>
-            </form>
+              <button id="loginBtn" class="button is-block is-link  is-fullwidth">Login</button>            
           </div>
           <p class="has-text-white">
-            <a href="registration.html">Sign Up</a>
+            <a class="button" href="registration.html">Sign Up</a>
             <!-- <a href="#">Forgot Password</a> &nbsp;·&nbsp;
             <a href="#">Need Help?</a> -->
           </p>
@@ -63,5 +58,25 @@
       </div>
     </div>
   </section>
+
+  <div id="loginModal" class="modal">
+    <div class="modal-background is-link"></div>
+    <div class="modal-card">
+      <header class="modal-card-head is-link">
+        <p class="modal-card-title has-text-centered is-link">Notification </p>
+        <button id="modalHide" class="delete" aria-label="close"></button>
+      </header>
+
+      <section class="modal-card-body has-text-centered">
+        <ul>
+          <strong> <li> You have been successfully logged in.</li> </strong>
+          <strong> <li> Currently server is down.</li> </strong>
+        </ul>
+      </section>
+
+    </div>
+  </div>
+  <!-- JS -->
+  <script src="js/login.js" type="text/javascript"></script>
 </body>
 </html>
