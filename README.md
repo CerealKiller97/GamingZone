@@ -8,3 +8,4 @@
  ``` AJAX ```
  ``` SCSS ```
  ``` HTML ```
+ ``` FancyBox3 ```
