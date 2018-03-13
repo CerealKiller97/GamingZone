@@ -1,7 +1,7 @@
 const BASE = 'https://cerealkiller97.github.io/GamingZone'
 const container = document.getElementById('gameContainer')
 
-$(document).ready(function () {
+$(document).ready( () => {
   setTimeout(() => {
     alertify.prompt('Gaming Zone Survey', 'What is your favourite game?', '', (evt, value) => {
       if (value != "") {
@@ -15,10 +15,6 @@ $(document).ready(function () {
     })
   }, 10000)
 
-  /*  let showModal = (id) => {
-     alert(id)
-   } */
-
   $.ajax({
     url: `${BASE}/assets/json/games.json`,
     dataType: 'json',
@@ -26,7 +22,6 @@ $(document).ready(function () {
       let content = ``
       container.innerHTML = ''
       data.forEach(game => {
-        let parsedDate = new Date(game.released) //image is-16by9 figure
         container.innerHTML += `
           <div class="column game is-one-fifth">
             <div class="card">
@@ -50,7 +45,6 @@ $(document).ready(function () {
           </div>
           `
       })
-      /*  $('#gameContainer').append(content) */
     }
   })
 })

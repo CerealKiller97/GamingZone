@@ -32,8 +32,8 @@ let newsletterValidatation = () => {
 
 let newsletterNotification = () => {
   if (envelope.classList.contains('icon-success')) {
-    console.log('OK')    
+    //console.log('OK')    
   } else {
-    console.log('Error')
+    //console.log('ERR')   
   }
 }

@@ -7,7 +7,6 @@ let mailEnvelope = document.querySelector('#mailEnvelope')
 let pwdLock = document.querySelector('#pwdLock')
 
 let hideModal = () => {
-  console.log(1)
   let loginModal = document.querySelector('#loginModal')
   loginModal.classList.add('opacityHide')
 }
@@ -16,7 +15,7 @@ let loginNotification = () => {
   let loginModal = document.querySelector('#loginModal')
   loginModal.classList.add('opacity1to0')
   // Add this here in if/else statement
-  //console.log(1)
+
   //loginModal.classList.add('opacityAnimation')
 
 
@@ -49,7 +48,6 @@ let mailBlur = () => {
 }
 
 let pwdBlur = () => {
-  console.log('Password blur');
   // Regular Expressions
   let regPwd = /^[a-zšđžćč]{2,20}[0-9]{1,}$/ // prepraviti da mogu i velika slova doci u obzir
 

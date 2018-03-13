@@ -13,7 +13,7 @@ $(document).ready(() => {
         output += `<div class="column">
                   <div class="box">
                     <figure class="image service-img is-128x128"> 
-                      <img src="${element.icon}">
+                      <img src="${element.icon}" alt="${element.heading}">
                     </figure>
                     <h3 class="title has-text-weight-light has-text-centered has-text-link">${element.heading}</h3>
                     <p class="has-text-centered">${element.desc}</p>

@@ -17,7 +17,7 @@ let isFormOK = true
 
 let regName = /^([A-ZŠĐŽĆČ][a-zšđžćč]{2,20}\s)+([A-ZŠĐŽĆČ][a-zšđžćč]{2,20})+$/
 let regUsername = /^[A-ZŠĐŽĆČ][a-zšđžćč]{2,20}((\_)|(\.))?[A-ZŠĐŽĆČ][a-zšđžćč]{2,20}[0-9]{0,5}$/
-let regEmail = /^[a-zšđžćč]{4,}(\.)?[a-zšđžćč]{4,}([0-9]{0,5})?\@((gmail)|(outlook)|(msn)|(live)|(hotmail)|(yahoo)|\w)\.com$/
+let regEmail = /^[a-zšđžćč]{4,}(\.)?([a-zšđžćč]{4,})*([0-9]{0,5})?\@((gmail)|(outlook)|(msn)|(live)|(hotmail)|(yahoo)|\w)\.com$/
 let regPwd = /^[a-zšđžćč]{2,20}[0-9]*$/
 
 window.onload = () => {
@@ -34,7 +34,7 @@ window.onload = () => {
   email.addEventListener('focus', removeClasses)
   pwd.addEventListener('focus', removeClasses)
   confirmPwd.addEventListener('focus', removeClasses)
-  /* name.addEventListener('blur',validName)  */
+
   registerBtn.addEventListener('click', registrationValidation)
 }
 
@@ -48,7 +48,6 @@ let removeClasses = (e) => {
 }
 
 let nameValid = () => {
-  //console.log('Blur');
 
   /* Checking for name input */
   if (!regName.test(name.value)) {
@@ -60,7 +59,6 @@ let nameValid = () => {
     isFormOK = true
     progress.value += 20
   }
-  console.log('Name', isFormOK);
 }
 
 let userValid = () => {
@@ -74,7 +72,6 @@ let userValid = () => {
     isFormOK = true
     progress.value += 20
   }
-  console.log('Username', isFormOK);
 }
 
 let emailValid = () => {
@@ -88,7 +85,7 @@ let emailValid = () => {
     isFormOK = true
     progress.value += 20
   }
-  console.log('Email', isFormOK);
+
 }
 
 let pwdValid = () => {
@@ -102,7 +99,6 @@ let pwdValid = () => {
     isFormOK = true
     progress.value += 20
   }
-  console.log('Password', isFormOK);
 }
 
 let confirmValid = () => {
@@ -118,7 +114,6 @@ let confirmValid = () => {
     isFormOK = false
     progress.value -= 20
   }
-  console.log('ConfirmPwd', isFormOK);
 }
 
 let registrationValidation = () => {
@@ -136,37 +131,11 @@ let registrationValidation = () => {
     confirmPwd.classList.remove('is-success')
     confirmPwd.value = ''
     progress.value = 0
-    console.log('Tacno');
     notify.textContent = 'You have been successfully logged in.Please check your mail to confirm your identity.'
   } else {
     notify.textContent = 'Something went wrong.Please try again.'
-    console.log('Netacno');
   }
 
-}
-/* let nameValid = () => {
-  let name = document.querySelector('#regName')
-  // Testing for name field
-  if (!name.value) {
-    name.classList.add('is-danger')
-  } else {
-    name.classList.add('is-success')
-    progress.value = counter
-    counter++
-    //animate za progress value
-  }
-  if (counter === 20) {
-    progress.value = 20
-  }
-
-  if (progress.value === 100) {
-    progress.classList.add('is-success')
-  }
-
-} */
-
-let alert = (msg) => {
-  return
 }
 
 $(document).ready(() => {
@@ -188,9 +157,7 @@ $(document).ready(() => {
       } else {
         $('#notify').removeClass('is-danger')
       }
-
     }, 3000)
-
   })
 
   $('#deleteBtn').click(() => {
@@ -201,6 +168,3 @@ $(document).ready(() => {
 
 })
 
-/* animate({
-      opacity: 1
-    }) */
