@@ -1,7 +1,7 @@
 [
     {
         "id"         : 1,
-        "name"       : "Crysis",
+        "name"       : "Crysis 3",
         "devStudio"  : "Crytek",
         "publisher"  : "Electronic Arts",
         "genres"     : "FPS",
@@ -13,7 +13,7 @@
 
     {
         "id"         : 2,
-        "name"       : "Crysis ",
+        "name"       : "Tomb Raider ",
         "devStudio"  : "Crytek",
         "publisher"  : "Electronic Arts",
         "genres"     : "FPS",
@@ -25,7 +25,7 @@
 
     {
         "id"         : 3,
-        "name"       : "Crysis",
+        "name"       : "Ghost Recon Wildlands",
         "devStudio"  : "Crytek",
         "publisher"  : "Electronic Arts",
         "genres"     : "FPS",

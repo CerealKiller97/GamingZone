@@ -1,0 +1,19 @@
+[ 
+  {
+    "heading" : "Instant delivery",
+    "icon"    : "assets/images/003-startup.svg",
+    "desc"    : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ipsam eos doloremque aliquam at itaque voluptate!A pariatur quis itaque earum."
+  },
+
+  {
+    "heading" : "Cheap service",
+    "icon"    : "assets/images/002-price-tag.svg",
+    "desc"    : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos doloremque aliquam at itaque voluptate!A pariatur quis itaque earum."
+  },
+
+  {
+    "heading" : "Original keys",
+    "icon"    : "assets/images/001-room-key.svg",
+    "desc"    : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos doloremque aliquam at itaque voluptate!A pariatur quis itaque earum."
+  }
+]
