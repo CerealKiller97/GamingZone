@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>GamingZone</title>
+  <!--META TAGS-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="description" content="Welcome to GamingZone store page here you can find most popular games of all time.">
+  <meta name="keywords" content="store,pc,ps4,ps3,cart">
+  <meta name="author" content="Stefan Bogdanović">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="rights" content="Copyright by Stefan Bogdanović@ 2018">
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/ico" sizes="16x16">
+  <!--CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/alertify.min.css" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/semantic.min.css" />
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/main.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+
+
+</head>
+
+<body>
+  <nav class="navbar is-link ">
+    <div class="container is-fluid">
+      <div class="navbar-brand">
+        <a href="index.html" class="navbar-item is-size-6 is-uppercase">
+          <h1>Gaming Zone</h1>
+        </a>
+        <span class="navbar-burger burger" data-target="navbarMenuHeroB">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </div>
+      <div id="navbarMenuHeroB" class="navbar-menu">
+        <div class="navbar-end">
+          <!--          <a class="navbar-item is-uppercase">
+            Store
+          </a>
+          <a class="navbar-item is-uppercase">
+            About
+          </a>
+          <a class="navbar-item is-uppercase">
+            Contact
+          </a> -->
+          <span class="navbar-item is-uppercase">
+            <a href="login.html" class="button is-info is-inverted navbar-button">
+              <span>Login</span>
+            </a>
+          </span>
+          <span class="navbar-item is-uppercase no-padding-left">
+            <a href="registration.html" class="button is-info is-inverted is-outlined navbar-button">
+              <span>Register</span>
+            </a>
+          </span>
+          <span class="navbar-item">
+            <i data-count="0" class="fa fa-shopping-cart fa-2x icon-white badge"></i>
+            <span class="badge"></span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="columns is-mobile">
+      <div class="column no-padding-bottom">
+        <div class="hero auto-full-height is-dark is-bold">
+          <div class="hero-body">
+            <aside class="menu">
+              <p class="menu-label">
+                Search
+                <div class="field has-addons">
+                  <div class="control">
+                    <input id="searchField" class="input" type="text" placeholder="Search game name" />
+                  </div>
+                  <div class="control">
+                    <a id="searchBtn" class="button is-link">
+                      Search
+                    </a>
+                  </div>
+                </div>
+              </p>
+              <p class="menu-label">
+                Filter By Platform
+              </p>
+              <ul class="menu-list">
+                <li>
+                  <input type="checkbox" class=" mt checkboxGenre" value="PC" /> PC
+                </li>
+                <li>
+                  <input type="checkbox" class=" mt checkboxGenre" value="PS4" /> PS4
+                </li>
+                <li>
+                  <input type="checkbox" class=" mt checkboxGenre" value="PS3" /> PS3
+                </li>
+                <li>
+                  <input type="checkbox" class=" mt checkboxGenre" value="Xbox One" /> Xbox One
+                </li>
+                <li>
+                  <input type="checkbox" class=" mt checkboxGenre"  value="Xbox 360"/> Xbox 360
+                </li>
+              </ul>
+              <p class="menu-label">
+                Sort By
+              </p>
+              <ul class="menu-list">
+                <a class="navbar-item">
+                  Price : Lowest
+                  <i class="fas fa-sort-amount-down"></i>
+                </a>
+                <a class="navbar-item">
+                  Price : Highest
+                  <i class="fas fa-sort-amount-up"></i>
+                </a>
+                <a class="navbar-item">
+                  Name [ A-Z ]
+                  <i class="fas fa-sort-alpha-up"></i>
+                </a>
+                <a class="navbar-item">
+                  Name [ Z-A ]
+                  <i class="fas fa-sort-alpha-down"></i>
+                </a>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </div>
+      <div class="column auto-full-height is-three-quarters no-padding-bottom padding-inset scroll-y">
+        <div class="columns is-multiline" id="gameContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- MODAL -->
+  <div class="modal gameModal opacity">
+
+  </div>
+
+  <!-- <script src="js/main.js"></script> -->
+  <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/alertify.min.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/storeModal.js"></script>
+</body>
+
+</html>
