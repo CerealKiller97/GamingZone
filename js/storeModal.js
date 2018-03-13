@@ -1,41 +1,39 @@
 $(document).ready(function () {
-  $(document).on("click", ".forModal" , showModal)
+  $(document).on("click", ".forModal", showModal)
   var count = 1
-  $(document).on("click", ".cart" , () => {
-    
+  $(document).on("click", ".cart", () => {
 
-      $('.badge').attr('data-value', count)
-      count++
+    $('.badge').attr('data-value', count)
+    count++
     alertify.notify('Added to cart. <i class="fas fa-shopping-cart"></i>', 'custom', 2)
   })
-}) 
-const BASE_URL = 'http://127.0.0.1:5500'
+})
+const BASE_URL = 'https://cerealkiller97.github.io/GamingZone'
 let modal = document.querySelector('.gameModal')
+
 let hideModal = () => {
   modal.classList.remove('is-active')
   modal.classList.remove('opacityActive')
 }
 let showModal = (e) => {
   let id = parseInt(e.target.attributes[1].textContent)
-   // ajax call 
+  // ajax call 
   // jquery aktivirati modal is-active
- // filter => id
+  // filter => id
   $.ajax({
     type: 'GET',
-    url: '../assets/json/dataJson.json',
+    url: `${BASE_URL}/assets/json/games.json`,
     dataType: 'json',
-    success:  (data) =>  {
+    success: (data) => {
       //filter
-      console.log(data)
-    let game = data.filter(game => id === game.id)[0]
-    let gallery = ''
-    game.screens.forEach(screen => {
-      gallery += `<a data-fancybox="gallery" href="${screen}"><img src="${screen}"/></a>`
-    })
+      let game = data.filter(game => id === game.id)[0]
+      let gallery = ''
+      game.screens.forEach(screen => {
+        gallery += `<a data-fancybox="gallery" href="${screen}"><img src="${screen}"/></a>`
+      })
       // ispisati kroz modal
-      let content = 
-                    `   
-                    <div class="modal-background" onclick="hideModal()"></div>
+      let content = `   
+                   <div class="modal-background" onclick="hideModal()"></div>
                     <div class="modal-card">
                     <section class="modal-card-body">
 
@@ -72,15 +70,11 @@ let showModal = (e) => {
                     </section>
                   </div>
                       `
-                      modal.innerHTML = content
-                      modal.classList.add('is-active')
-                      setTimeout(() => {
-                        modal.classList.add('opacityActive')
-                      }, 100)
-                      
-                      // pop up modal is active
+      modal.innerHTML = content
+      modal.classList.add('is-active')
+      setTimeout(() => {
+        modal.classList.add('opacityActive')
+      }, 100)
     }
   })
-
 }
-/*  */
