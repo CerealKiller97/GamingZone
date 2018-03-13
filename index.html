@@ -1,211 +1,276 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
   <title>GamingZone</title>
   <!--META TAGS-->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="utf-8">
-  <meta name="description" content="Free Web tutorials">
-  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="description" content="Welcome to GamingZone the best gaming web shop.">
+  <meta name="keywords" content="GamingZone,Games,enterntaiment,consoles,pc,ps3,about,webshop">
   <meta name="author" content="Stefan Bogdanović">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="rights" content="Copyright by Stefan Bogdanović@ 2018">
   <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/ico" sizes="16x16">
   <!--CSS-->
-  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/alertify.min.css" />
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <link rel="stylesheet" href="css/main.css">
-  <!-- <script >Alertify.js</script> -->
-  <!-- LIGHT BOX http://lokeshdhakar.com/projects/lightbox2/-->
 </head>
-
 <body>
-  <!-- NAVBAR -->
-  <nav class="navbar is-link">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="index.html">GamingZone </a>
-      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-
-    <div id="navbarExampleTransparentExample" class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item" href="#"> Home </a>
-        <div class="navbar-item has-dropdown"> 
-          <a id="dropdown" class="navbar-link" href="#"> Games </a>
-          <div class="navbar-dropdown is-boxed">
-            <a class="navbar-item" href="#"> PC </a>
-            <a class="navbar-item" href="#">PS4 </a>
-            <a class="navbar-item" href="#">Xbox One </a>
-            <a class="navbar-item" href="#">PS3 </a>
-            <a class="navbar-item" href="#">Xbox 360 </a>
-            <hr class="navbar-divider">
-            <a class="navbar-item is-active" href="#"> Retro</a>
+  <!-- HERO -->
+  <section class="hero is-bold is-link is-fullheight landing">
+    <div class="hero-head">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a href="index.html" class="navbar-item is-size-6 is-uppercase">
+              <h1>Gaming Zone</h1>
+            </a>
+            <span class="navbar-burger burger" data-target="navbarMenuHeroB">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroB" class="navbar-menu">
+            <div class="navbar-end">
+              <a href="store.html" class="navbar-item is-uppercase">
+                Store
+              </a>
+              <a id="about" href="#about" class="navbar-item is-uppercase">
+                About
+              </a>
+              <a href="#contact" class="navbar-item is-uppercase">
+                Contact
+              </a>
+              <span class="navbar-item is-uppercase">
+                <a href="login.html" class="button is-info is-inverted navbar-button">
+                  <span>Login</span>
+                </a>
+              </span>
+              <span class="navbar-item is-uppercase no-padding-left">
+                <a href="registration.html" class="button is-info is-inverted is-outlined navbar-button">
+                  <span>Register</span>
+                </a>
+              </span>
+            </div>
           </div>
         </div>
-        <a class="navbar-item" href="#">About</a>
-        <a class="navbar-item" href="#">Contact</a>
-      </div>
-
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="field is-grouped">
-            <p class="control">
-              <a class="button" href="registration.html"><span> Register </span> </a>
+      </nav>
+    </div>
+    <div class="hero-body">
+      <div class="container has-text-left">
+        <h1 class=" cta-heading title is-size-1 is-uppercase has-text-weight-light">
+          Gaming Zone
+          <h1>
+            <p class="subtitle has-text-weight-light">
+              <!-- Check out our hot deals and promotions, and start playing your favourite game now. -->
+              Start playing your favourite game now.
             </p>
-            <p class="control">
-              <a class="button is-dark" href="login.html"><span>Login</span> </a>
-            </p>
-          </div>
-        </div>
+            <a href="store.html" class="button is-link is-inverted is-outlined is-uppercase">Browse Store</a>
       </div>
     </div>
-  </nav>
-  <!-- END OF NAVBAR -->
-
-  <!-- SLIDER -->
-  <div class="container">
-    <p class="has-text-justified">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur beatae atque delectus cumque assumenda, obcaecati non
-      excepturi quam nostrum distinctio enim molestias culpa doloremque amet, provident, itaque accusamus nam ipsa. Lorem
-      ipsum dolor sit amet consectetur adipisicing elit. Consequuntur beatae atque delectus cumque assumenda, obcaecati non
-      excepturi quam nostrum distinctio enim molestias culpa doloremque amet, provident, itaque accusamus nam ipsa. Lorem
-      ipsum dolor sit amet consectetur adipisicing elit. Consequuntur beatae atque delectus cumque assumenda, obcaecati non
-      excepturi quam nostrum distinctio enim molestias culpa doloremque amet, provident, itaque accusamus nam ipsa. Lorem
-      ipsum dolor sit amet consectetur adipisicing elit. Consequuntur beatae atque delectus cumque assumenda, obcaecati non
-      excepturi quam nostrum distinctio enim molestias culpa doloremque amet, provident, itaque accusamus nam ipsa. Lorem
-      ipsum dolor sit amet consectetur adipisicing elit. Consequuntur beatae atque delectus cumque assumenda, obcaecati non
-      excepturi quam nostrum distinctio enim molestias culpa doloremque amet, provident, itaque accusamus nam ipsa.
-    </p>
-
-    <img src="" alt="" />
-  </div>
-  <!-- END OF SLIDER -->
-
-  <!-- SECTION -->
-  <div class="container">
-    <div id="heros" class="columns">
-
-      <div class="column is-one-third">
-        <article class="tile is-child box">
-            <figure class=" image is-128x128 ">
-              <svg class="svg-inline--fa fa-coffee fa-w-20" aria-hidden="true" data-fa-i2svg="" data-prefix="fas" data-icon="coffee" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M192 384h192c53 0 96-43 96-96h32c70.6 0 128-57.4 128-128S582.6 32 512 32H120c-13.3 0-24 10.7-24 24v232c0 53 43 96 96 96zM512 96c35.3 0 64 28.7 64 64s-28.7 64-64 64h-32V96h32zm47.7 384H48.3c-47.6 0-61-64-36-64h583.3c25 0 11.8 64-35.9 64z"></path></svg>
-              </figure>
-          <h2 class="title has-text-centered">One column</h2>          
-          <div class="content has-text-justified">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum
-              ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-          </div>
-      </div>
-
-      <div class="column is-one-third">
-        <article class="tile is-child box">
-          <figure class="image  is-128x128">
-              <svg class="svg-inline--fa fa-coffee fa-w-20" aria-hidden="true" data-fa-i2svg="" data-prefix="fas" data-icon="coffee" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M192 384h192c53 0 96-43 96-96h32c70.6 0 128-57.4 128-128S582.6 32 512 32H120c-13.3 0-24 10.7-24 24v232c0 53 43 96 96 96zM512 96c35.3 0 64 28.7 64 64s-28.7 64-64 64h-32V96h32zm47.7 384H48.3c-47.6 0-61-64-36-64h583.3c25 0 11.8 64-35.9 64z"></path></svg>             
-          </figure>
-          <h2 class="title has-text-centered">Seconds column</h2>
-          <div class="content has-text-justified">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum
-              ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-          </div>
-        </article>
-      </div>
-
-      <div class="column is-one-third">
-        <article class="tile is-child box">
-          <figure class="image is-128x128">
-              <svg class="svg-inline--fa fa-camera-retro fa-w-16" aria-hidden="true" data-fa-i2svg="" data-prefix="fas" data-icon="camera-retro" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="currentColor" d="M48 32C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48H48zm0 32h106c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H38c-3.3 0-6-2.7-6-6V80c0-8.8 7.2-16 16-16zm426 96H38c-3.3 0-6-2.7-6-6v-36c0-3.3 2.7-6 6-6h138l30.2-45.3c1.1-1.7 3-2.7 5-2.7H464c8.8 0 16 7.2 16 16v74c0 3.3-2.7 6-6 6zM256 424c-66.2 0-120-53.8-120-120s53.8-120 120-120 120 53.8 120 120-53.8 120-120 120zm0-208c-48.5 0-88 39.5-88 88s39.5 88 88 88 88-39.5 88-88-39.5-88-88-88zm-48 104c-8.8 0-16-7.2-16-16 0-35.3 28.7-64 64-64 8.8 0 16 7.2 16 16s-7.2 16-16 16c-17.6 0-32 14.4-32 32 0 8.8-7.2 16-16 16z"></path>
-              </svg>
-          </figure>
-          <h2 class="title has-text-centered">Third column</h2>
-          <div class="content has-text-justified">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus odio quis feugiat facilisis.
-            </p>
-          </div>
-      </div>
-
-    </div>
-  </div>
-  <!-- END OF SECTION -->
-  <div class="modal">
-      <div class="modal-background"></div>
-      <div class="modal-content">
-        <p class="image is-4by3">
-          <img src="https://bulma.io/images/placeholders/1280x960.png" alt="">
-        </p>
-      </div>
-      <button class="modal-close is-large" aria-label="close"></button>
-    </div>
-
-    
-  <!-- ACTIONS -->
-
-  <!-- END OF ACTIONS -->
-
-  <!-- NEWSLETTER -->
-  <div id="newsletter" class="hero is-link bsa">
+  </section>
+  <!-- SIDEBAR -->
+  <aside class="section sidebar">
     <div class="container">
-      <div class="columns is-vcentered">
+      <ul class="has-text-centered">
+        <li>
+          <a href="index.html" class="is-uppercase is-size-3">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="store.html" class="is-uppercase is-size-3">
+            Store
+          </a>
+        </li>
+        <li>
+          <a href="#about" class="is-uppercase is-size-3">
+            About
+          </a>
+        </li>
+        <li>
+          <a href="#" class="is-uppercase is-size-3">
+            Contact
+          </a>
+        </li>
+        <li>
+          <a href="login.html" class="is-uppercase is-size-3">
+            Login
+          </a>
+        </li>
+        <li>
+          <a href="registration.html" class="is-uppercase is-size-3">
+            Register
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+  <!-- SIDEBAR -->
+  <!-- SERVICES -->
+  <section class="hero is-white is-bold is-medium">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-variable servicesContainer is-8">
 
-        <div class="column is-one-third">
-          <h2 class="title">Let's stay in touch</h2>
-          <h3 class="subtitle">No spam we promise</h3>
         </div>
-
-        <div class="column ">
-          <div class="field is-grouped">
-            <div class="control is-expanded">
-              <p class="control has-icons-left has-icons-right">
-                <input id="newsletterInput" class="input" type="email" placeholder="Enter your email address.." />
-                <span class="icon is-small is-left">
-                  <i id="envelope" class="fas fa-envelope"></i>
-                </span>
-                <p id="res" class="help"></p>
-                <span class="icon is-small is-right is-invisible">
-                  <i class=" fas fa-check"></i>
-                </span>
+      </div>
+    </div>
+  </section>
+  <!-- END OF SERVICES -->
+  <!-- ABOUT SECTION -->
+  <section class="hero is-light is-bold is-medium" id="about">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-three-quarters has-text-justified">
+            <h2 class="title">
+              Gaming Zone.
+            </h2>
+            <h3 class="subtitle">
+              The best gaming shop on the Web
+            </h3>
+            <div class="content">
+              <p>
+                At GamingZone, we are first and foremost gamers. Gaming is what got us into computers early on. It gave birth to a passion
+                for programming that—decades later—led us into the exciting world of gaming. It is our belief that this industry
+                can be vastly improved and made better for all—publishers, game developers, casual gamers, e-sport professionals—through
+                the use of cryptocurrency. Today we are an international, multicultural company looking to transform the
+                gaming industry with the GameCredits cryptocurrency (GAME) and other blockchain-based products. Founded in
+                2016 in Belgrade, Serbia, GameCredits Inc. is now a 100-people team spread across 10 offices in five countries.
+                And we keep on playing.
               </p>
             </div>
-            <div class="control">
-              <button id="newsletterBtn" class="button is-white is-outlined">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END OF ABOUT SECTION -->
+  <!-- NEWSLETTER/CONTACT -->
+  <section id="contact" class="hero is-link is-bold is-small ">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-vcentered">
+          <div class="column is-two-thirds">
+            <p class="control has-icons-left has-icons-right">
+              <input id="newsletter" class="input" type="email" placeholder="Enter your email address...">
+              <span class="icon is-small is-left">
+                <i id="envelope" class="fas fa-envelope"></i>
+              </span>
+            </p>
+          </div>
+          <div class="column has-text-right">
+            <h3 class="title has-text-weight-light">
+              Let's stay in touch.
+            </h3>
+            <h4 class="subtitle has-text-weight-light">
+              No spam we promise.
+            </h4>
+            <button id="subscribeBtn" class="button is-info is-inverted is-outlined navbar-button">
+              <span> Subscribe
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END OF NEWSLETTER -->
+  <!-- FOOTER  -->
+  <footer class="hero is-dark is-bold">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns has-text-centered is-variable is-8">
+          <div class="column">
+            <p class="menu-label">
+              General
+            </p>
+            <ul class="menu-list">
+              <li>
+                <a class="footer-link" href="">Home</a>
+              </li>
+              <li>
+                <a class="footer-link" href="#about">About</a>
+              </li>
+              <li>
+                <a class="footer-link" href="">Contact</a>
+              </li>
+              <li>
+                <a class="footer-link" href="documentation.pdf">Documentation</a>
+              </li>
+              <li>
+                <a class="footer-link" href="https://cerealkiller97.github.io/portfolio/">Author</a>
+              </li>
+            </ul>
+          </div>
+          <div class="column">
+            <p class="menu-label">Games
+            </p>
+            <ul class="menu-list">
+              <li>
+                <a class="footer-link" href="store.html">PC</a>
+              </li>
+              <li>
+                <a class="footer-link" href="store.html">PS4</a>
+              </li>
+              <li>
+                <a class="footer-link" href="store.html">Xbox One</a>
+              </li>
+              <li>
+                <a class="footer-link" href="store.html">PS3</a>
+              </li>
+              <li>
+                <a class="footer-link" href="store.html">Xbox 360</a>
+              </li>
+              <li>
+                <a class="footer-link" href="store.html">Retro</a>
+              </li>
+            </ul>
+          </div>
+          <div class="column">
+            <p class="menu-label">
+              Social Networks
+            </p>
+            <ul class="menu-list">
+              <li>
+                <a id="fbHover" href="https://www.facebook.com/" target="_blank">
+                  Facebook
+                  <i class=" social fab fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a id="twitterHover" href="https://www.twitter.com" target="_blank">
+                  Twitter
+                  <i class=" social fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a id="YTHover" href="https://www.youtube.com" target="_blank">
+                  Youtube
+                  <i class=" social fab fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="column">
+            <div class="arrowToTop">
+              <i id="arrow" class="fas fa-angle-up"></i>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- END OF NEWSLETTER -->
-
-  <!-- FOOTER -->
-  <footer class="hero is-dark bsa">
-    <div class="container">
-      <div class="columns">
-        <div class="column">
-            
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore incidunt doloribus aliquam voluptatem, necessitatibus sint est tempora quisquam eveniet ad iure mollitia harum porro alias ducimus quo quod minima beatae.
-            Dignissimos, nulla. Laborum nesciunt quidem ex dignissimos velit iste voluptatum ipsum consectetur? Assumenda autem voluptate quod porro ex? Tempora aliquam id repellendus inventore numquam neque nisi obcaecati? Laborum, labore impedit.
-        </div>
-        <div class="column">
-            Facilis reiciendis id sed tenetur magni animi exercitationem ipsum facere? Possimus, provident accusantium obcaecati vitae quia fugiat accusamus veritatis et modi officia aspernatur nulla optio saepe non, soluta perferendis aliquid.
-            Error, doloremque dolorum? Dicta architecto neque recusandae aperiam nemo fugiat aliquam sit veniam eligendi vel repellendus sed laboriosam asperiores modi illum provident quisquam itaque nobis, dolores voluptatibus consectetur dolore. Voluptas!
-        </div>
-        <div class="column">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad mollitia optio aut doloremque, enim praesentium nam aperiam velit ipsa quia laboriosam dignissimos quam quas expedita natus, et itaque odio molestias.Similique dolorem temporibus quibusdam et explicabo voluptates ducimus quasi? Perferendis nihil pariatur incidunt ipsum sapiente quaerat nemo esse, deleniti alias laboriosam molestias eveniet ab quod soluta labore, error at cum.
-        </div>
-      </div>
-    </div>
-    
   </footer>
-  <!-- END OF FOOTER -->
-  <!--JS-->
-  <!--Google Analytics-->
-  <script src="js/main.js"></script>
-  <!-- <script type="text/javascript" src="js/jquery.js"></script> -->
+  <!-- FOOTER  -->
+  <!-- JS -->
+  <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/alertify.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="js/main.js" type="text/javascript"></script>
+  <script src="js/jquery.js" type="text/javascript"></script>
 </body>
-
 </html>
