@@ -3,9 +3,10 @@ $(document).ready(() => {
   alertify.notify('Welcome to Gaming Zone.', 'custom', 2)
   let servicesContainer = document.querySelector('.servicesContainer')
   let output = ``
+  let BASE = 'https://cerealkiller97.github.io/GamingZone'
   $.ajax({
     type: 'GET',
-    url: '../assets/json/services.json',
+    url: `${BASE}/assets/json/services.json`,
     dataType: 'json',
     success: (data) => {
       data.forEach(element => {

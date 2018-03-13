@@ -1,4 +1,4 @@
-const BASE = 'http://127.0.0.1:5500'
+const BASE = 'https://cerealkiller97.github.io/GamingZone'
 const container = document.getElementById('gameContainer')
 
 $(document).ready(function () {
@@ -20,7 +20,7 @@ $(document).ready(function () {
    } */
 
   $.ajax({
-    url: `${BASE}/assets/json/dataJson.json`,
+    url: `${BASE}/assets/json/games.json`,
     dataType: 'json',
     success: (data) => {
       let content = ``
@@ -73,7 +73,7 @@ platformChecks.forEach(check => {
 
     // AJAX sa PROMENJENIM filtersima
     $.ajax({
-      url: `${BASE}/assets/json/dataJson.json`,
+      url: `${BASE}/assets/json/games.json`,
       dataType: 'json',
       success: (data) => {
         let content = ``
@@ -153,7 +153,7 @@ let searchGames = () => {
   let searchTerm = document.querySelector('#searchField')
   if (searchTerm.value.toLowerCase()) {
     $.ajax({
-      url: `${BASE}/assets/json/dataJson.json`,
+      url: `${BASE}/assets/json/games.json`,
       dataType: 'json',
       success: (data) => {
         let result = data.filter(game => game.title.toLowerCase().startsWith(searchTerm.value.toLowerCase()))
