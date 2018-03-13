@@ -1,60 +1,39 @@
-let newsletter = document.querySelector('#newsletterInput')
-let dropdown = document.querySelector('#dropdown')
-let newsletterBtn = document.querySelector('#newsletterBtn')
+/**
+ * SIDEBAR
+ */
+
+const toggle = document.querySelector('.navbar-burger')
+const sidebar = document.querySelector('.sidebar')
+const arrowToTop = document.querySelector('.arrowToTop')
+const newsletter = document.querySelector('#newsletter')
+const subscribeBtn = document.querySelector('#subscribeBtn')
+
 window.onload = () => {
+  toggle.addEventListener('click',showSideBar )
   newsletter.addEventListener('blur', newsletterValidatation)
-  dropdown.addEventListener('mouseenter', showDropdown)
-  newsletterBtn.addEventListener('click', showNotification)
-  /* name.addEventListener('blur', nameValid)  */
+  subscribeBtn.addEventListener('click',newsletterNotification )
+}
+
+let showSideBar = () => {
+  sidebar.classList.toggle('sidebar-active')
+  toggle.classList.toggle('is-active')
 }
 
 let newsletterValidatation = () => {
   let inputVal = newsletter.value
-  let reEmail = /^[a-zšđžćč]{4,}(\.)?[a-zšđžćč]{4,}([0-9]{0,5})?\@((gmail)|(outlook)|\w)\.com$/
+  let reEmail = /^[a-zšđžćč]{4,}(\.)?[a-zšđžćč]{4,}([0-9]{0,5})?\@((gmail)|(outlook)|(msn)|(live)|(hotmail)|(yahoo)|\w)\.com$/
   let envelope = document.querySelector('#envelope')
   if (!reEmail.test(inputVal)) {
-    envelope.classList.add('icon-success')
-  } else {
     envelope.classList.add('icon-danger')
-  }  
-}
-
-let showNotification = () => {
-  if (envelope.classList.contains('icon-success')) {
-    console.log('OK')  
   } else {
-    console.log('ERROR')
+    envelope.classList.add('icon-success')
   }
 }
 
-let showDropdown = () => {
-  dropdown.parentElement.classList.add('is-hoverable')
-}
-
-/* VALIDATION */
-function validation() {
-   // let reName = / /
-   // let reLastName = / /
-   // let reName = / /
-   // let reName = / /
-   // let reName = / /
-
-}
-
-let slider = () => {
-  let xhr = new XMLHttpRequest()
-  xhr.open('../assets/slider.json','GET',true)
-  xhr.readyState = (data) => {
-    if (this.status == 200) {
-      document.createElement('img')
-      let res = JSON.parse(data)
-      console.log(res);
-      
-    }
+let newsletterNotification = () => {
+  if (envelope.classList.contains('icon-success')) {
+    console.log('OK')    
+  } else {
+    console.log('Error')
   }
-}
-
-let createLayout = () => {
-  //Napravi div sa klasom one-third i stiluzuj 
-
 }
