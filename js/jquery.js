@@ -16,7 +16,7 @@ $(document).ready(() => {
                       <img src="${element.icon}" alt="${element.heading}"/>
                     </figure>
                     <h3 class="title has-text-weight-light has-text-centered has-text-link">${element.heading}</h3>
-                    <p class="has-text-centered">${element.desc}</p>
+                    <p class="has-text-justified">${element.desc}</p>
                   </div>
                </div>`
         servicesContainer.innerHTML = output
