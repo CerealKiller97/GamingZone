@@ -14,10 +14,6 @@ let hideModal = () => {
 let loginNotification = () => {
   let loginModal = document.querySelector('#loginModal')
   loginModal.classList.add('opacity1to0')
-  // Add this here in if/else statement
-
-  //loginModal.classList.add('opacityAnimation')
-
 
   if ((mailEnvelope.classList.contains('icon-danger')) || (pwdLock.classList.contains('icon-danger'))) {
     loginBtn.setAttribute('disabled',true)

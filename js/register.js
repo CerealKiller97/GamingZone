@@ -142,7 +142,7 @@ $(document).ready(() => {
   // Register button
   //$('#notify').addClass('opacity')
 
-  $('#registerBtn').click(function () {
+  $('#registerBtn').click(() =>  {
     if (isFormOK) {
       $('#notify').addClass('is-link')
     } else {
@@ -150,7 +150,7 @@ $(document).ready(() => {
     }
     $('#notify').addClass('opacityActive')
 
-    setTimeout(function () {
+    setTimeout( () => {
       $('#notify').removeClass('opacityActive')
       if (isFormOK) {
         $('#notify').removeClass('is-link')
