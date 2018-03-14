@@ -7,7 +7,7 @@ $(document).ready( () => {
       if (value != "") {
         alertify.notify('Thank you.', 'customSuccess', 2)
       } else {
-        alertify.notify('Ahhh.Ok.Next time.', 'customDanger', 2)
+        alertify.notify('Ah :( okay, next time.', 'customDanger', 2)
       }
 
     }, () => {
