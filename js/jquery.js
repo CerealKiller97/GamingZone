@@ -33,11 +33,29 @@ $(document).ready(() => {
   /* SHOW/HIDE SCROLL TO TOP */
   $(window).scroll(() => {
     if ($(this).scrollTop() > 400) {
+      setTimeout(() => {
+        $('.arrowToTop').addClass('opacityActive')
+      }, 100)
       $('.arrowToTop').addClass('visible')
     } else {
       $('.arrowToTop').removeClass('visible')
     }
   })
+
+  $('#about').click((e) => {
+    e.preventDefault()   
+    $('html').animate({
+        scrollTop: $('#aboutSection').offset().top},1000)  
+})
+
+$('#contactLink').click((e) => {
+  e.preventDefault()
+
+  $('html').animate({
+      scrollTop: $('#contactSection').offset().top},1000)
+  
+})
+
 
   $('#aboutLink').click(function(e){
     e.preventDefault();
