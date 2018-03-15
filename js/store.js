@@ -11,7 +11,7 @@ $(document).ready( () => {
       }
 
     }, () => {
-      alertify.notify('Ahhh.Ok.Next time.', 'customDanger', 2)
+      alertify.notify('Ah :( okay, next time.', 'customDanger', 2)
     })
   }, 20000)
 
