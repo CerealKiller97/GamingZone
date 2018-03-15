@@ -13,7 +13,7 @@ $(document).ready( () => {
     }, () => {
       alertify.notify('Ahhh.Ok.Next time.', 'customDanger', 2)
     })
-  }, 10000)
+  }, 20000)
 
   $.ajax({
     url: `${BASE}/assets/json/games.json`,
