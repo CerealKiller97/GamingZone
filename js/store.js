@@ -5,13 +5,13 @@ $(document).ready( () => {
   setTimeout(() => {
     alertify.prompt('Gaming Zone Survey', 'What is your favourite game?', '', (evt, value) => {
       if (value != "") {
-        alertify.notify('Thank you :) . ', 'customSuccess', 2)
+        alertify.notify('Thank you :)  ', 'customSuccess', 2)
       } else {
-        alertify.notify('Ah :( okay, next time.', 'customDanger', 2)
+        alertify.notify('Ah :( okay, next time', 'customDanger', 2)
       }
 
     }, () => {
-      alertify.notify('Ah :( okay, next time.', 'customDanger', 2)
+      alertify.notify('Ah :( okay, next time', 'customDanger', 2)
     })
   }, 20000)
 
