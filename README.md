@@ -1,6 +1,6 @@
 # Gaming Zone 
-**School project for Web Programming course** 
-#### Version v2.0
+**School project for Web Programming course**
+My first Javascript web site.
 
 # Gaming Zone features:
  ``` Vanilla JS ``` 
@@ -8,5 +8,6 @@
  ```jQuery ```
  ``` AJAX ```
  ``` SCSS ```
+ ```Alertify.js```
  ``` HTML ```
  ``` FancyBox3 ```
