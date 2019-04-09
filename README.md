@@ -4,6 +4,7 @@
 
 # Gaming Zone features:
  ``` Vanilla JS ``` 
+ ``` Bulma CSS framework```
  ```jQuery ```
  ``` AJAX ```
  ``` SCSS ```
