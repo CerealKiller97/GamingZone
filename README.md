@@ -1,6 +1,7 @@
 # Gaming Zone 
 **School project for Web Programming course**
-My first Javascript web site.
+ 
+ My first Javascript web site.
 
 # Gaming Zone features:
  ``` Vanilla JS ``` 
