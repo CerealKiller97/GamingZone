@@ -9,8 +9,9 @@
  ``` CSS 3 ```
 ``` Vanilla JS ```
 ```jQuery ```
+``` JSON ```
  ``` AJAX ```
  ```Alertify.js```
  ``` FancyBox3 ```
 
-This project was made in March, 2018 for one of many web programming courses that I attended at the ICT college. It represents an e-commerce gaming shop.
+This project was made in March, 2018 for Web Programming course. It represents an e-commerce gaming shop.
